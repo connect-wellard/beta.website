@@ -1,0 +1,14 @@
+IoT:
+  - name: The Things Network - Console
+    link: https://console.thethingsnetwork.org
+    description: to login to IoT in Wellard.
+  - name: National Narrowband Network Co.
+    link: https://www.nnnco.com.au/
+    description: Enterprise grade LoRaWAN network.
+  - name: SigFox for The Village at Wellard Residents Association
+    link: https://id.sigfox.com/organizations/the-village-at-wellard-residents-association/team
+    description: Alternative to LoRaWAN.
+Community WiFi:
+  - name: What is a community WiFi network?
+    link: https://en.wikipedia.org/wiki/Wireless_community_network
+    description: Information about community wifi networks
