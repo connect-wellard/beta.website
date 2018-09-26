@@ -1,4 +1,5 @@
-IoT:
+- title: IoT
+  links:
   - name: The Things Network - Console
     link: https://console.thethingsnetwork.org
     description: to login to IoT in Wellard.
@@ -8,7 +9,8 @@ IoT:
   - name: SigFox for The Village at Wellard Residents Association
     link: https://id.sigfox.com/organizations/the-village-at-wellard-residents-association/team
     description: Alternative to LoRaWAN.
-Community WiFi:
+- title: Community WiFi
+  links:
   - name: What is a community WiFi network?
     link: https://en.wikipedia.org/wiki/Wireless_community_network
     description: Information about community wifi networks

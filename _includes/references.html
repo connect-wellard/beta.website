@@ -1,0 +1,9 @@
+<h2>References</h2>
+{% for entries in site.data.references %}
+  <h3>{{ entries.title }}</h3>
+  <ul>
+  {% for links in entries.links %}
+    <li><a href="{{ links.link }}">{{ links.name }}</a> - {{ links.description }}</li>
+  {% endfor %}
+  </ul>
+{% endfor %}
