@@ -1,0 +1,20 @@
+---
+layout: default
+title: About Us
+---
+
+<section class="portfolio-block block-intro border-bottom"></section>
+  <div class="container"></div>
+  <section class="portfolio-block article">
+  <div class="container">
+    <ul>
+        {% for author in site.authors %}
+          <li>
+            <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
+            <p>{{ author.bio }}</p>
+            <p>{{ author.content | markdownify }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+  </div>
+</section>

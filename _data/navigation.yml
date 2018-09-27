@@ -1,8 +1,10 @@
 - title: home
   link: /
 - title: about us
-  link: /  
+  link: /about_us.html
 - title: contact us
   link: /
+- title: articles
+  link: /articles.html
 - title: projects
   link: /

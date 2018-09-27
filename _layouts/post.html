@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<section class="portfolio-block block-intro border-bottom"></section>
+  <div class="container"></div>
+  <section class="portfolio-block article">
+  <div class="container">
+    <p>
+        {% assign author = site.authors | where: 'short_name', page.author | first %}
+        {% if author %}
+          <div><a href="{{ author.url }}">{{ author.name }}</a></div>
+          <div>{{ author.bio }}</div>
+          <div>{{ page.date | date_to_string }}</div>
+        {% endif %}
+    </p>
+
+    {{ content }}
+  </div>
+</section>
