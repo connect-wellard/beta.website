@@ -23,10 +23,7 @@ title: Connect Wellard
             <div class="collapse navbar-collapse"
                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects-grid-cards.html">About Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="cv.html">Contact Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="hire-me.html">Projects</a></li>
+                    {% include navigation.html %}
                 </ul>
             </div>
         </div>
@@ -46,9 +43,13 @@ title: Connect Wellard
             </div>
         </section>
     </main>
-    <footer data-aos="fade" data-aos-duration="1200" class="page-footer">
+    <footer data-aos="fade" data-aos-duration="400" class="page-footer">
         <div class="container">
-            <div class="links"><a href="#">About us</a><a href="#">Contact us</a><a href="#">Projects</a></div>
+            <div class="links">
+                {% for links in site.data.navigation %}
+                    <a href="{{ links.link }}">{{ links.title | capitalize }}</a>
+                {% endfor %}
+            </div>
             <div class="social-icons"><a href="https://github.com/connect-wellard/"><i class="icon ion-social-github"></i></a></div>
         </div>
     </footer>
