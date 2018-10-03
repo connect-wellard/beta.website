@@ -9,9 +9,6 @@
   background-repeat:no-repeat;
 }
 
-.navbar-brand {
-}
-
 .overlay {
   /*background-image:radial-gradient(rgba(0,0,0,.6),transparent)!important;*/
   min-height:100vh;
@@ -19,10 +16,6 @@
 
 .container.welcome-section {
   min-height:100vh;
-}
-
-.portfolio-block.block-intro {
-  padding:0px;
 }
 
 .gradient {
