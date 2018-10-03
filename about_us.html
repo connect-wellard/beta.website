@@ -1,0 +1,26 @@
+---
+layout: default
+title: About Us
+---
+<main class="page about-us">
+    <section class="portfolio-block block-intro border-bottom">
+        <div class="container">
+          <div class="about-me">
+            <p><strong>Connect Wellard</strong> is a community group formed with the .</p>
+          </div>
+        </div>
+    </section>
+  <section class="portfolio-block article">
+    <div class="container">
+      <ul>
+          {% for author in site.authors %}
+            <li>
+              <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
+              <p>{{ author.bio }}</p>
+              <p>{{ author.content | markdownify }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+  </section>
+</main>
