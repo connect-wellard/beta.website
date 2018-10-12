@@ -1,5 +1,5 @@
 ---
 short_name: seb
 name: Sebastian
-bio: Working elsewhere, coding, testing or sleeping.
+bio: A QA & DevOps guy that enjoys building & testing systems, services & processes that empower people to innovate, collaborate & communicate
 ---
