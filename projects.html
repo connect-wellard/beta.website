@@ -1,0 +1,25 @@
+---
+layout: default
+title: Projects
+---
+<main class="page projects">
+    <section class="portfolio-block block-intro border-bottom">
+        <div class="container">
+          <div class="about-me">
+            <p><strong>See below for a list of projects the <strong>Connect Wellard</strong> team are currently, or have been, a part of.</p>
+          </div>
+        </div>
+    </section>
+  <section class="project-block article">
+    <div class="container">
+      <ul>
+          {% for project in site.projects %}
+            <li>
+                <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+              <p>{{ project.description | markdownify }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+  </section>
+</main>
